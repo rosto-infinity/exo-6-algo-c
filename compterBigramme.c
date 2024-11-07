@@ -35,3 +35,16 @@ int main() {
 
     return 0;
 }
+// Explication du Code
+// Fonction compterBigramme :
+
+// Prend en entrée une chaîne et un bigramme.
+// Initialise un compteur à zéro.
+// Vérifie que le bigramme a bien une longueur de 2.
+// Parcourt la chaîne jusqu'à la longueur de la chaîne moins la longueur du bigramme.
+// Utilise strncmp pour comparer les lettres à la position actuelle avec le bigramme.
+// Incrémente le compteur à chaque correspondance.
+// Fonction main :
+
+// Définit une chaîne et un bigramme à rechercher.
+// Appelle la fonction compterBigramme et affiche le résultat.

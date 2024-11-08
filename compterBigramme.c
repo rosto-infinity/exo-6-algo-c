@@ -2,25 +2,25 @@
 #include <string.h>
 
 int compterBigramme(const char *chaine, const char *bigramme) {
-    int compteur = 0;
-    int longueurChaine = strlen(chaine);
-    int longueurBigramme = strlen(bigramme);
+    int cpter = 0;
+    int longChaine = strlen(chaine);
+    int longBigram = strlen(bigramme);
 
     // Vérifie que le bigramme a une longueur de 2
-    if (longueurBigramme != 2) {
+    if (longBigram != 2) {
         printf("Le bigramme doit avoir une longueur de 2.\n");
         return -1; // Erreur
     }
 
     // Parcours de la chaîne
-    for (int i = 0; i <= longueurChaine - longueurBigramme; i++) {
+    for (int i = 0; i <= longChaine - longBigram; i++) {
         // Vérifie si le bigramme correspond aux deux lettres à la position i
-        if (strncmp(&chaine[i], bigramme, longueurBigramme) == 0) {
-            compteur++;
+        if (strncmp(&chaine[i], bigramme, longBigram) == 0) {
+            cpter++;
         }
     }
 
-    return compteur; // Retourne le nombre d'occurrences
+    return cpter; // Retourne le nombre d'occurrences
 }
 
 int main() {
@@ -39,11 +39,11 @@ int main() {
 // Fonction compterBigramme :
 
 // Prend en entrée une chaîne et un bigramme.
-// Initialise un compteur à zéro.
+// Initialise un cpter à zéro.
 // Vérifie que le bigramme a bien une longueur de 2.
 // Parcourt la chaîne jusqu'à la longueur de la chaîne moins la longueur du bigramme.
 // Utilise strncmp pour comparer les lettres à la position actuelle avec le bigramme.
-// Incrémente le compteur à chaque correspondance.
+// Incrémente le cpter à chaque correspondance.
 // Fonction main :
 
 // Définit une chaîne et un bigramme à rechercher.
